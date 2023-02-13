@@ -1,0 +1,15 @@
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 32px;
+}
+
+.github-logo {
+    height: 32px;
+    width: 32px;
+}

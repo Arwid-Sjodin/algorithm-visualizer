@@ -1,0 +1,90 @@
+
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --black : rgba(0, 0, 0, 1);
+  --grey : rgba(90, 90, 90, 1);
+
+  --gold: rgb(255, 215, 00);
+
+  --dark-red: rgb(255, 50, 50);
+
+  --bright-red : rgb(100, 10, 20);
+
+  --main-hover-opacity: 0.60;
+  --main-hover-opacity-oposite: 0.40;
+  --main-disabled-opacity: 0.40;
+
+  --main-border: 1px solid var(--black);
+
+  --main-line-height: 1.25em;
+  --main-font-size: 1.25em;
+  --main-font-size-small: 1em;
+  --main-font-size-large: 1.5em;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+body {
+  background-color: var(--black);
+  margin: 0;
+  position: relative;
+  margin: 0;
+  font-family: 'Segoe UI', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a{
+  width: auto;
+  font-size: var(--main-font-size);
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.active-div {
+  opacity: var(--main-hover-opacity);
+}
+
+.selected-div {
+  background-color: var(--dark-red) !important;
+}
+
+.no-background {
+  background-color: transparent !important;
+}
+
+.untargetable {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.clickable-div:active,
+.clickable-div:hover,
+.clickable-div.active{
+  opacity: var(--main-hover-opacity);
+}
+
+.disabled,
+.disabled:active,
+.disabled:hover,
+.disabled > * {
+  opacity: var(--main-disabled-opacity) !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+.clickable-img:hover {
+  opacity: var(--main-hover-opacity);
+}

@@ -1,0 +1,151 @@
+
+.button-container,
+.button{
+    background-color: var(--bright-red);
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    margin : 0;
+    padding: 0;
+    width: 100%;
+}
+
+.button-and-dropdown-container{
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    margin : 0;
+    padding: 0;
+    width: 100%;
+}
+
+.button,
+.dropdown-content,
+.button-container {
+    overflow: hidden;
+    border: 0px solid var(--white);
+    border-radius: 10px;
+}
+
+
+
+.button-and-dropdown-container > *,
+.button-container > * {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    color: var(--white);
+    width : 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.dropdown-content {
+    background-color: var(--black);
+    margin-top: 5px;
+    width : 100%;
+    height: 36px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    height: auto;
+    box-sizing: border-box;
+    z-index: 5;
+}
+  
+.dropdown-content a {
+    background-color: var(--bright-red);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 9px 0px;
+}
+
+.dropdown-content a:hover {
+    opacity: var(--main-hover-opacity);
+}
+
+.dropdown-open {
+    display: block;
+}
+
+.fa-caret-down {
+    transform: rotate(0deg);
+}
+  
+.active .fa-caret-down {
+    transform: rotate(180deg);
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: transparent; 
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    visibility: hidden;
+    opacity: 3;
+    position: absolute;
+}
+  
+.slider::-moz-range-thumb {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.left-side {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.slider-label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.button-text {
+    line-height: 1.5rem;
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.dropdown-button-text-container {
+    display: flex;
+}
+
+.dropdown-button-text-container-left {
+    width: 100%;
+}
+
+.dropdown-button-text-container-right {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+}

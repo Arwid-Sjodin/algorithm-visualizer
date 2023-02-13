@@ -1,0 +1,103 @@
+.grid-parent {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container {
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap : 1px;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+    gap : 1px;
+}
+
+.grid-cell {
+    flex : 1;
+    background-color: var(--white);
+    box-sizing: border-box;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+
+
+.inner-cell {
+    font-size: 1rem;
+    font-weight : 600;
+    color: var(--black);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .inner-cell {
+        font-size: 0.7em;
+    }
+}
+
+.inner-cell.SRC,
+.inner-cell.DEST,
+.inner-cell.CONNECTED_A,
+.inner-cell.CONNECTED_B
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    
+.inner-cell.SRC { 
+    background-image: url(../../../public/images/source.png);
+} 
+
+.inner-cell.DEST { 
+    background-image: url(../../../public/images/destination.png);
+}
+
+.inner-cell.CONNECTED_B,
+.inner-cell.CONNECTED_A
+{ 
+    background-image: url(../../../public/images/black-circle.png);
+}
+
+
+.inner-cell.REMOVED { 
+    background-color: var(--black);
+}
+
+.grid-cell.VISITED { background-color: var(--bright-red); }
+.grid-cell.PATH { background-color: var(--dark-red); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

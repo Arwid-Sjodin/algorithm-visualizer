@@ -1,0 +1,43 @@
+.bar {
+    display: block;
+    align-self: flex-end;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+.chart {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .large-array {
+        gap : 0px !important;
+    }
+}
+
+.border-always {
+    gap: 1px;
+}
+
+
+.bar.sortState-NONE {
+}
+
+.bar.sortState-READ {
+    background-color: var(--dark-red);
+}
+
+.bar.sortState-WRITE {
+    background-color: var(--dark-red);
+}
+
+.bar.sortState-FINAL {
+    background-color: var(--bright-red);
+}
