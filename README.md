@@ -13,6 +13,7 @@ A React app for visualizing pathfinding and sorting algorithms.
     - [Sort](#sort)
     - [Pathfind](#pathfind)
   - [Run Locally](#run-locally)
+  - [License](#license)
 
 
 ## Demo
@@ -20,7 +21,7 @@ A React app for visualizing pathfinding and sorting algorithms.
 https://arwid-sjodin.github.io/algorithm-visualizer/
 
 ## Tech Stack
-React, JavaScript
+React, JavaScript, HTML, CSS
 
 ## Features
 ### Sort
@@ -67,6 +68,9 @@ If an algorithm is already started, the result is shown immediately when a cell 
     npm install --no-save
     npm start
 ```
+
+## License
+[MIT](https://github.com/Arwid-Sjodin/algorithm-visualizer/blob/main/LICENSE)
 
 
 
